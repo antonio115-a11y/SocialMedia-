@@ -1,0 +1,280 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 17, 2017, 10:21:53 AM
+    Author     : Hein Htet
+*/
+@font-face {
+    font-family: 'Bellota-LightItalic';
+    src: url('../fonts/Bellota-LightItalic.otf');
+}
+
+@font-face {
+    font-family: 'Bellota-BoldItalic';
+    src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
+body {
+    line-height: 17px;
+    background-color: #E6EAE8;
+}
+
+a{
+    color: #20aae5;
+    text-decoration: none;
+}
+
+.top_bar {
+    width: 100%;
+    min-width: 1050px;
+    height: 40px;
+    background-color: #3498db;
+    border-bottom: 0.25px solid #2980b9;
+    margin: 0 0 10px 0;
+    display: inline-flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo a {
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    margin-left: 10px;
+    font-size: 30px;
+    position: relative;
+    top: 9px;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    color: #1086BA;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    right: 1px;
+    position: absolute;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+nav a:hover {
+    border-bottom: 7px solid #e67e22;
+    color: #fff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    top: 50px;
+    position: relative;
+    padding: 0 10px;
+    width: 75%;
+    min-width: 950px;
+}
+
+.column {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #d3d3d3;
+    z-index: -1;
+}
+
+.user_details {
+    width: 250px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.user_details_left_right {
+    width: 125px;
+    display: inline-block;
+    position: absolute;
+}
+
+.user_details img {
+    height: 125px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.main_column {
+    float: right;
+    width: 70%;
+    z-index: -1;
+    min-height: 160px;
+}
+
+.post_form {
+    width: 100%;
+}
+
+.post_form textArea {
+    width: 81%;
+    height: 60px;
+    border-radius: 3px;
+    margin-right: 5px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    padding: 5px;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.post_form input[type="submit"] {
+    width: 11%;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    background-color : #3498db; 
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    color: white;
+    font-size: 90%;
+    position: absolute;
+    outline: 0;
+    margin: 0;
+}
+
+.post_form input[type="submit"]:active {
+    padding: 5px 4px 4px 5px;
+}
+
+.status_post {
+    width: 96%;
+    font-size: 15px;
+    padding: 0px 5px;
+    min-height: 75px;
+    cursor: pointer;
+}
+
+.post_profile_pic {
+    float: left;
+    margin-right: 7px;
+}
+
+.post_profile_pic img {
+    border-radius: 5px;
+}
+
+#comment_iframe {
+    max-height: 250px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.comment_section {
+    padding: 0 5px 5px 5px;
+}
+
+.comment_section img {
+    margin : 0 6px 6px 6px;
+    border-radius: 3px;
+}
+
+#comment_form textarea{
+    border-color: #d3d3d3;
+    width: 85%;
+    height: 35px;
+    border-radius: 5px;
+    color: #616060;
+    font-size: 14px;
+    margin: 3px 3px 3px 5px;
+}
+
+#comment_form input[type='submit']{
+    border: none;
+    background-color: #20aae5;
+    color: #156588;
+    border-radius: 5px;
+    width: 13%;
+    height: 40px;
+    margin-top: 3px;
+    position: absolute;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+}
+
+.newsfeedPostOptions{
+    padding: 0px;
+    text-decoration: none;
+    color: #20aae5;
+    border: none;
+}
+
+.newsfeedPostOptions iframe {
+    border: 0px;
+    height: 17px;
+    width: 120px;
+}
+
+.newsfeedPostOptions form {
+    position: absolute;
+    top: 0;
+}
+
+.comment_like {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #3498db;
+    padding: 0;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.like_value {
+    display: inline;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.profile_left {
+    top: -10px;
+    width: 17%;
+    max-width: 240px;
+    min-width: 130px;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-color: #37B0E9;
+    border-right: 10px solid #83D6FE;
+    color: #CBEAF8;
+    margin-right: 20px;
+}
+
+.profile_left img {
+    min-width: 80px;
+    width: 55%;
+    margin: 20px;
+    border: 5px solid #83d6fe;
+    border-radius: 100px;
+}
+
+.profile_info {
+    display: list-item;
+    background-color: #286090;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.profile_info p {
+    margin: 0 0 0 20px;
+    word-wrap: break-word;
+}
